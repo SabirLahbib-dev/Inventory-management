@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="device-width" content="width=device-width, initial-scale=1.0" />
+    <title>Projet de gestion d'inventaire</title>
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <body>
+      <!--The header-->
+      <header class="js-header">
+        <div id="adding-product-bar">
+          <p class="page-title">Gestion d'Inventaire</p>
+          <p class="small-title">Gérez vos produits en stock</p>
+        </div>
+        <div class="stock-info">
+          <div class="total-products">
+            <p class="tp">Total produits</p>
+            <p class="total-product-number">63</p>
+          </div>
+          <div class="stock-value">
+            <p class="sv">Valeur stock</p>
+            <p class="stock-value-number">70637.00 DH</p>
+          </div>
+        </div>
+      </header>
+      <!--Add product bar-->
+      <div class="adding-product-buttons-container">
+        <p>Ajouter un produit</p>
+        <div class="add-product-bar">
+          <input
+            type="text"
+            placeholder="Nom du produit"
+            class="add-product-input js-add-product-input"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Description du produit"
+            class="add-product-description js-add-product-description"
+            required
+          />
+          <input
+            type="file"
+            class="add-product-image js-add-product-image fileInput"
+            id="file-input"
+            required
+          />
+          <label for="file-input" class="custom-file-label"
+            >Choisir une image</label
+          >
+          <input
+            type="text"
+            placeholder="Prix (DH)"
+            class="add-price-input js-add-price-input"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Quantité"
+            class="add-quantity-input js-add-quantity-input"
+            required
+          />
+          <button
+            class="final-adding-product-button js-final-adding-product-button"
+          >
+            <span>+</span> Ajouter
+          </button>
+        </div>
+      </div>
+      <!--Fixed add button-->
+      <a href="#adding-product-bar"
+        ><button class="Fixed-final-adding-product-button">+</button></a
+      >
+      <main class="js-main-products-container">
+        <!--Product 1-->
+      </main>
+      <script type="module" src="Magasin.js"></script>
+    </body>
+  </head>
+</html>
